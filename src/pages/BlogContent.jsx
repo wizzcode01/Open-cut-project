@@ -2,13 +2,16 @@ import blog from '../assets/blog-img.webp'
 import profile from '../assets/profile-img.jpeg'
 import Navbar from "../components/Navbar"
 
+
 const BlogContent = () => {
+
+   
     return (
       <div className='bg-black text-white min-h-screen'>
         <Navbar/>
-        <div className='flex flex-col justify-center items-center py-16 px-4'>
+        <div className='flex flex-col justify-center items-center py-16 px-4 mt-20'>
             <div className='w-full max-w-4xl flex flex-col gap-6 p-6 rounded-2xl'>
-                <img src={blog} alt="blog-img" className='w-full h-64 md:h-80 object-cover rounded-lg' />
+                <img src={blog} alt="blog-img" className='w-[80%] h-64 md:h-80 object-cover rounded-lg' />
                 
                 <div className='flex flex-col gap-4'>
                   <small className="text-gray-400 text-sm">July 19, 2025</small>
@@ -29,11 +32,11 @@ const BlogContent = () => {
                             The moment we've all been waiting for - you can finally try <span className='font-bold text-white'>OpenCut</span>!
                         </p>
                         
-                        <div className='bg-gray-900 p-4 rounded-lg border-l-4 border-purple-500'>
+                        <div className=' p-4 rounded-lg '>
                             <p className='text-white font-semibold mb-2'>Try it now:</p>
                             <a 
                                 href="https://opencut.app/" 
-                                className='text-purple-400 hover:text-purple-300 transition-colors underline font-medium'
+                                className=' transition-colors underline font-medium'
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -41,8 +44,8 @@ const BlogContent = () => {
                             </a>
                         </div>
 
-                        <div className='bg-yellow-900/20 border border-yellow-700/50 p-4 rounded-lg'>
-                            <p className='text-yellow-200'>
+                        <div className='p-4 rounded-lg'>
+                            <p className='text-gray-200'>
                                 <span className='font-bold'>Remember:</span> This is super early alpha. Expect bugs, missing features, and rough edges. We're literally one month in.
                             </p>
                         </div>

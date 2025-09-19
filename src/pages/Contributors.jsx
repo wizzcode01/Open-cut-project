@@ -101,13 +101,13 @@ const Contributors = () => {
     const externalTools = [
         { name: "Marble", description: "Modern headless CMS for content management and the blog for OpenCut", icon: "🗿" },
         { name: "Vercel", description: "Platform where we deploy and host OpenCut", icon: <SiVercel /> },
-        { name: "Databuddy", description: "GDPR compliant analytics and user insights for OpenCut", icon: "📊" }
+        { name: "Databuddy", description: "GDPR compliant analytics and user insights for OpenCut", icon: <SiDatadog/> }
     ]
 
     return (
         <div className="bg-black text-white min-h-screen">
             <Navbar/>
-            <div className="flex flex-col gap-12 justify-center items-center py-20 px-4">
+            <div className="flex flex-col gap-12 justify-center items-center py-20 px-4 mt-20">
                 {/* Header Section */}
                 <div className="flex flex-col gap-6 text-center max-w-4xl">
                     <div className="flex justify-center">
@@ -141,10 +141,10 @@ const Contributors = () => {
                         <p className="text-gray-400">Leading the way in contributions</p>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center max-w-2xl mx-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center max-w-4xl mx-auto">
                         {topContributors.map((contributor, index) => (
                             <div key={index} className="border border-gray-700 rounded-lg p-6 bg-gray-900/50 text-center">
-                                <div className="w-16 h-16 rounded-full bg-gray-700 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                                <div className="w-20 h-20 rounded-full bg-gray-700 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                                     {contributor.avatar}
                                 </div>
                                 <h3 className="text-xl font-semibold mb-2">{contributor.name}</h3>
@@ -166,8 +166,8 @@ const Contributors = () => {
                     
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                         {allContributors.map((contributor, index) => (
-                            <div key={index} className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 text-center hover:bg-gray-800/50 transition-colors">
-                                <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-sm font-bold mx-auto mb-2">
+                            <div key={index} className=" p-4 text-center">
+                                <div className="w-14 h-14 rounded-full bg-gray-700 flex hover:bg-gray-800/50  transition-colors duration-300 cursor-pointer items-center justify-center text-sm font-bold mx-auto mb-2">
                                     {contributor.avatar}
                                 </div>
                                 <p className="text-sm font-medium truncate mb-1">{contributor.name}</p>
@@ -177,7 +177,6 @@ const Contributors = () => {
                     </div>
                 </div>
 
-                {/* External Tools */}
                 <div className="w-full max-w-4xl">
                     <div className="text-center mb-8">
                         <h2 className="text-2xl font-bold text-gray-100 mb-2">External Tools</h2>
@@ -186,7 +185,7 @@ const Contributors = () => {
                     
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {externalTools.map((tool, index) => (
-                            <div key={index} className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 text-center">
+                            <div key={index} className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 text-center flex flex-col items-center">
                                 <div className="text-3xl mb-4">
                                     {typeof tool.icon === 'string' ? tool.icon : tool.icon}
                                 </div>
@@ -204,18 +203,19 @@ const Contributors = () => {
                         OpenCut is built by developers like you. Every contribution, no matter how small, 
                         helps make video editing more accessible for everyone.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a 
                             href="https://github.com/opencut/opencut" 
-                            className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+                            className="bg-white text-black px-6 py-2 rounded-2xl font-semibold hover:bg-gray-200 transition-colors flex gap-2 items-center"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
+                            <FaGithub/>
                             Start Contributing
                         </a>
                         <a 
                             href="https://github.com/opencut/opencut/issues" 
-                            className="border border-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+                            className="border border-gray-600 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-800 transition-colors text-center"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
