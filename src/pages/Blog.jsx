@@ -8,9 +8,9 @@ const Blog = () => {
     return (
        <div className='bg-black text-white min-h-screen  '>
         <Navbar/>
-        <div className='flex flex-col justify-center items-center py-16'>
+        <div className='flex flex-col justify-center items-center py-16 md:mt-20'>
           <div className='max-w-5xl w-full px-4'>
-            <div className='text-center flex flex-col justify-center items-center gap-4 mb-16 m-5 mt-20'>
+            <div className='text-center flex flex-col justify-center items-center gap-4 w-full mb-16 md:m-5 mt-20'>
               <h1 className='font-bold text-5xl text-gray-300'>Blog</h1>
               <p className='text-[22px] text-gray-400 max-w-2xl'>
                 Read the latest news and updates about OpenCut, the free and open-source video editor
@@ -19,7 +19,7 @@ const Blog = () => {
             
             <div 
             onClick={() => navigate('/blog-content')}
-            className='w-full md:w-[38%] md:h-[65%] flex justify-start items-start flex-col gap-4 p-3 bg-gray-900 rounded-2xl cursor-pointer m-20'>
+            className='w-full md:w-[38%] md:h-[65%] flex justify-start md:justify-center items-start flex-col gap-4 p-3 bg-gray-900 rounded-2xl cursor-pointer md:m-20'>
               <img src={blog} alt="blog-img" className='w-full h-full rounded-lg object-cover' />
               <div className='flex items-center gap-2'>
                   <img src={profile} alt="profile" className='w-8 h-8 rounded-full object-cover'/>

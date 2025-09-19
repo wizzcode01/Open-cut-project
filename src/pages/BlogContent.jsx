@@ -11,7 +11,7 @@ const BlogContent = () => {
         <Navbar/>
         <div className='flex flex-col justify-center items-center py-16 px-4 mt-20'>
             <div className='w-full max-w-4xl flex flex-col gap-6 p-6 rounded-2xl'>
-                <img src={blog} alt="blog-img" className='w-[80%] h-64 md:h-80 object-cover rounded-lg' />
+                <img src={blog} alt="blog-img" className='w-full md:w-full h-full md:h-80 object-contain rounded-2xl' />
                 
                 <div className='flex flex-col gap-4'>
                   <small className="text-gray-400 text-sm">July 19, 2025</small>
@@ -54,19 +54,19 @@ const BlogContent = () => {
                             <h3 className='text-xl font-bold text-white'>What works right now:</h3>
                             <ul className='space-y-2 text-gray-300'>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-green-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Import videos,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-green-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Basic timeline editing,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-green-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Simple cuts and trims,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-green-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Zero watermarks, completely free.
                                 </li>
                             </ul>
@@ -76,29 +76,29 @@ const BlogContent = () => {
                             <h3 className='text-xl font-bold text-white'>What's coming soon:</h3>
                             <ul className='space-y-2 text-gray-300'>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-blue-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Proper rendering/export,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-blue-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Effects and transitions,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-blue-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Audio editing,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-blue-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Better export options,
                                 </li>
                                 <li className='flex items-start gap-2'>
-                                    <span className='text-blue-400 mt-1'>•</span>
+                                    <span className=' mt-1'>•</span>
                                     Basically everything CapCut has, and more.
                                 </li>
                             </ul>
                         </div>
 
-                        <div className='bg-purple-900/20 border border-purple-700/50 p-6 rounded-lg'>
+                        <div className='border-2 border-gray-700/50 p-6 rounded-lg'>
                             <p className='text-purple-100 leading-relaxed'>
                                 Found a <span className='italic font-medium'>bug</span>? Have <span className='italic font-medium'>feedback</span>? Drop it in the suggestions channel on our{' '}
                                 <span className='font-bold text-white'>Discord</span>! Your input is helping build the future of open source video editing.

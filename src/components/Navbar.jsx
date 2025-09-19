@@ -17,8 +17,8 @@ const Navbar = () => {
             <span className="text-xl font-bold md:block hidden">OpenCut</span>
           </Link>
 
-          <div className="flex justify-between items-center space-x-8">
-            <div className='flex items-center gap-4 text-[16px] font-semibold'>
+          <div className="flex justify-between items-center gap-2 md:space-x-8">
+            <div className='flex items-center gap-2 md:gap-4 text-[16px] font-semibold'>
                 <Link to='/blog' className=' text-gray-200 hover:text-gray-400'>Blog</Link>
                 <Link to='/contributors' className=' text-gray-200 hover:text-gray-400'>Contributors</Link>
             </div>
