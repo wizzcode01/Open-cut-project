@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-center items-center'>
     <nav className="bg-black text-white fixed top-0 md:w-3xl w-[95%] border border-gray-700 m-5 rounded-2xl h-15 ">
-      <div className="max-w-6xl mx-auto px-4 ">
+      <div className=" mx-auto px-4 ">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">
             <div className="w-8 h-8  flex items-center justify-center font-bold">

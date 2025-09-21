@@ -187,7 +187,7 @@ const Contributors = () => {
                         {externalTools.map((tool, index) => (
                             <div key={index} className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 text-center flex flex-col items-center">
                                 <div className="text-3xl mb-4">
-                                    {typeof tool.icon === 'string' ? tool.icon : tool.icon}
+                                    { tool.icon}
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{tool.name}</h3>
                                 <p className="text-gray-400 text-sm">{tool.description}</p>

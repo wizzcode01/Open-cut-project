@@ -12,7 +12,6 @@ const Hero = () => {
       style={{ backgroundImage: `url(${landingImg})` }}
     >
       <Navbar />
-
       {/* Hero Content */}
       <div className="flex flex-col items-center justify-center h-full text-center px-4 mt-10">
         <div className="flex flex-col items-center gap-4">
@@ -27,6 +26,7 @@ const Hero = () => {
             <span className="font-bold flex items-center gap-2">
               <SiVercel className="text-gray-100" /> Vercel
             </span>
+            
           </motion.p>
 
           <div className="flex flex-col items-center text-gray-200">
