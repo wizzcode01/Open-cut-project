@@ -40,11 +40,12 @@ const Hero = () => {
             </motion.h1>
 
             <motion.h1
-              className="text-4xl md:text-6xl font-extrabold mb-4 border-2 border-amber-500 -rotate-4 p-1 rounded-lg"
+              className="relative z-20 text-4xl md:text-6xl font-extrabold mb-4 border-2 border-amber-500 -rotate-4 p-1 rounded-lg bg-black/80 "
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
+              
               Video Editor
             </motion.h1>
           </div>

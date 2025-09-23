@@ -112,7 +112,7 @@ const Roadmap = () => {
                         </div>
                           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a 
-                                href="https://github.com/opencut/opencut" 
+                                href="https://github.com/OpenCut-app/OpenCut/blob/main/.github/CONTRIBUTING.md" 
                                 className="bg-gray-900 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-700 transition-colors flex gap-2 items-center"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Roadmap = () => {
                                 Start Contributing
                             </a>
                             <a 
-                                href="https://github.com/opencut/opencut/issues" 
+                                href="https://github.com/OpenCut-app/OpenCut/issues" 
                                 className="border border-gray-600 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-800 transition-colors text-center"
                                 target="_blank"
                                 rel="noopener noreferrer"
