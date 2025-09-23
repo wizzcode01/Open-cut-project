@@ -35,7 +35,7 @@ const Footer = () => {
             <h1 className="text-white font-bold mb-4">Company</h1>
             <div className="flex flex-col gap-3 text-gray-400">
                 <Link to="/contributors" className="hover:text-white transition-colors">Contributors</Link>
-                <Link href="/" className="hover:text-white transition-colors">About</Link>
+                <a href="https://github.com/OpenCut-app/OpenCut/blob/main/README.md" target="_blank" className="hover:text-white transition-colors">About</a>
             </div>
           </div>
        </div>
