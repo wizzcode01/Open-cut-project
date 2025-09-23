@@ -4,6 +4,9 @@ import Landing from './pages/Landing'
 import Contributors from './pages/Contributors'
 import Blog from './pages/Blog'
 import BlogContent from './pages/BlogContent'
+import Roadmap from './pages/Roadmap'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+
 
 function App() {
 
@@ -16,6 +19,9 @@ function App() {
            <Route path="/blog" element={<Blog/>} />
            <Route path="/contributors" element={<Contributors/>} />
             <Route path="/blog-content" element={<BlogContent/>} />
+            <Route path="/roadmap" element={<Roadmap/>} />
+             <Route path="/privacy" element={<PrivacyPolicy/>} />
+
         </Routes>
       </div>
     </Router>
