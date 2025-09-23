@@ -21,8 +21,8 @@ const TermsOfService = () => {
                       Fair and transparent terms for our free, open-source video editor.</p>
                 </div> 
           </div>
-            <div className='flex flex-col justify-center m-14'>
-          <div className='w-4xl flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
+            <div className='flex flex-col justify-center md:m-14'>
+          <div className='md:w-4xl w-xl flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
           
               <div className="mb-12">
                 <h2 className="text-2xl font-bold  mb-6">

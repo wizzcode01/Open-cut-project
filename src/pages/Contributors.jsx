@@ -197,7 +197,7 @@ const Contributors = () => {
                 </div>
 
                 {/* Call to Action */}
-                <div className="w-full max-w-4xl text-center bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-700/50 rounded-2xl p-8">
+                <div className="w-full max-w-4xl text-center  rounded-2xl p-8">
                     <h2 className="text-2xl font-bold mb-4">Join the community</h2>
                     <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
                         OpenCut is built by developers like you. Every contribution, no matter how small, 

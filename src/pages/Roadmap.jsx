@@ -22,84 +22,84 @@ const Roadmap = () => {
                        What's coming next for OpenCut (last updated: July 14, 2025) </p>
                 </div> 
 
-                <div className="w-full flex flex-col gap-5 justify-center m-auto items-start lg:w-3xl ">
+                <div className="w-full flex flex-col gap-5 justify-center m-auto items-start text-[#a3a3a3] lg:w-3xl ">
                     <ol className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                        <li className="font-semibold text-lg">Start</li> 
+                        <li className="font-semibold text-[20px] text-[#dddddd]">1.  Start</li> 
                         <button className="bg-green-500 text-white rounded-2xl px-2 text-[14px] font-semibold">Completed</button>
                         </div>
-                        <div className="text-gray-400">
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">This is where it all started. Repository created, initial project structure, and the vision for a free, open-source video editor. Check out the first tweet to see where it started.</p>
+                        <div className="">
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl ml-5">  This is where it all started. Repository created, initial project structure, and the vision for a free, open-source video editor. Check out the first tweet to see where it started.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                        <li className="font-semibold text-lg">Core UI</li> 
+                        <li className="font-semibold text-[20px] text-[#dddddd]">2.  Core UI</li> 
                          <button className="bg-green-500 text-white rounded-2xl px-2 text-[14px] font-semibold">Completed</button>
                         </div>
                        
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">Built the foundation - main layout, header, sidebar, timeline container, and basic component structure. Not all functionality yet, but the UI framework that everything else builds on.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">Built the foundation - main layout, header, sidebar, timeline container, and basic component structure. Not all functionality yet, but the UI framework that everything else builds on.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Basic Functionality</li> 
+                          <li className="font-semibold text-[20px] text-[#dddddd]">3  Basic Functionality</li> 
                            <button className="bg-yellow-500 text-white rounded-2xl px-2 text-[14px] font-semibold">In Progress</button>
                         </div>
                        
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">The heart of any video editor. Timeline zoom in/out, making clips longer/shorter, dragging elements around, selection, playhead scrubbing. This part has to be fucking perfect because it's what users interact with 99% of the time.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">The heart of any video editor. Timeline zoom in/out, making clips longer/shorter, dragging elements around, selection, playhead scrubbing. This part has to be fucking perfect because it's what users interact with 99% of the time.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Export/Preview Logic</li>
+                          <li className="font-semibold text-[20px] text-[#dddddd]">4  Export/Preview Logic</li>
                             <button className="bg-green-500 text-white rounded-2xl px-2 text-[14px] font-semibold">Completed</button> 
                          </div>
                       
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">The foundation that enables everything else. Real-time preview, video rendering, export functionality. Once this works, we can add effects, filters, transitions - basically everything that makes a video editor powerful.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">The foundation that enables everything else. Real-time preview, video rendering, export functionality. Once this works, we can add effects, filters, transitions - basically everything that makes a video editor powerful.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Text</li> 
+                          <li className="font-semibold text-[20px] text-[#dddddd]">5  Text</li> 
                            <button className="bg-[#302f2f] text-white rounded-2xl px-2 text-[14px] font-semibold">Not Started</button>
                         </div>
                        
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">After media, text is the next most important thing. Font selection with custom font imports, text stroke, colors. All the text essential text properties.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">After media, text is the next most important thing. Font selection with custom font imports, text stroke, colors. All the text essential text properties.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Effects</li> 
+                          <li className="font-semibold text-[20px] text-[#dddddd]">6  Effects</li> 
                             <button className="bg-[#302f2f] text-white rounded-2xl px-2 text-[14px] font-semibold">Not Started</button>
                         </div>
                       
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">Adding visual effects to both text and media. Blur, brightness, contrast, saturation, filters, and all the creative tools that make videos pop. This is where the magic happens.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">Adding visual effects to both text and media. Blur, brightness, contrast, saturation, filters, and all the creative tools that make videos pop. This is where the magic happens.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Transition</li> 
+                          <li className="font-semibold text-[20px] text-[#dddddd]">7  Transition</li> 
                            <button className=" bg-[#302f2f] text-white rounded-2xl px-2 text-[14px] font-semibold">Not Started</button>
                         </div>
                        
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">Smooth transitions between clips. Fade in/out, slide, zoom, dissolve, and custom transition effects.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">Smooth transitions between clips. Fade in/out, slide, zoom, dissolve, and custom transition effects.</p>
                         </div>
                     </ol>
                       <ol  className="flex flex-col gap-3">
                         <div className="flex gap-2 items-center rounded-lg">
-                          <li className="font-semibold text-lg">Refine from Here</li> 
+                          <li className="font-semibold text-[20px] text-[#dddddd]">8  Refine from Here</li> 
                            <button className="bg-blue-500 text-white rounded-2xl px-2 text-[14px] font-semibold">Future</button>
                         </div>
                        
                         <div>
-                            <p className="text-[16px] md:text-[17px] text-gray-400 max-w-3xl">Once we nail the above, we have a solid foundation to build anything. Advanced features, performance optimizations, mobile support, desktop app.</p>
+                            <p className="text-[16px] md:text-[17px]  max-w-3xl  ml-5">Once we nail the above, we have a solid foundation to build anything. Advanced features, performance optimizations, mobile support, desktop app.</p>
                         </div>
                     </ol>
                   
