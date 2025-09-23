@@ -6,6 +6,7 @@ import Blog from './pages/Blog'
 import BlogContent from './pages/BlogContent'
 import Roadmap from './pages/Roadmap'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import Terms from './pages/Terms'
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
            <Route path="/contributors" element={<Contributors/>} />
             <Route path="/blog-content" element={<BlogContent/>} />
             <Route path="/roadmap" element={<Roadmap/>} />
-             <Route path="/privacy" element={<PrivacyPolicy/>} />
+            <Route path="/privacy" element={<PrivacyPolicy/>} />
+            <Route path="/terms" element={<Terms/>} />
 
         </Routes>
       </div>
