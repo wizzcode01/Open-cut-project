@@ -98,12 +98,12 @@ const BlogContent = () => {
                             </ul>
                         </div>
 
-                        <div className='border-2 border-gray-700/50 p-6 rounded-lg'>
+                        <div className=' p-6 rounded-lg'>
                             <p className='text-purple-100 leading-relaxed'>
                                 Found a <span className='italic font-medium'>bug</span>? Have <span className='italic font-medium'>feedback</span>? Drop it in the suggestions channel on our{' '}
-                                <span className='font-bold text-white'>Discord</span>! Your input is helping build the future of open source video editing.
+                                <a href='https://discord.com/' target='_blank' className='font-bold text-blue-500'>Discord</a>! Your input is helping build the future of open source video editing.
                             </p>
-                            <div className='mt-4 flex gap-3'>
+                            {/* <div className='mt-4 flex gap-3'>
                                 <a 
                                     href="https://discord.gg/opencut" 
                                     className='bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg transition-colors font-medium'
@@ -121,13 +121,13 @@ const BlogContent = () => {
                                     View on GitHub
                                 </a>
                             </div>
-                        </div>
-
+                      
                         <div className='text-center pt-8 border-t border-gray-800'>
                             <p className='text-gray-400 text-sm'>
                                 Thank you for being part of the OpenCut journey! 🎬
                             </p>
-                        </div>
+                        </div> */}
+                          </div>
                     </div>
                 </div>
             </div>
