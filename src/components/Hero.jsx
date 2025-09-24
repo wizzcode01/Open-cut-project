@@ -40,18 +40,18 @@ const Hero = () => {
             </motion.h1>
 
             <motion.h1
-              className="relative z-20 text-4xl md:text-6xl font-bold mb-4 border-t-2 border-b-2 border-amber-500 -rotate-4 p-1 px-8 rounded-lg bg-black/80 "
+              className="relative z-20 text-4xl md:text-6xl font-bold mb-4 border-t border-b border-yellow-500 -rotate-4 p-1 px-8 rounded-lg bg-black/80 "
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
             <div className="flex justify-between">
-                <div className="absolute -left-2 top-0 border-2 border-amber-500 rounded-full w-8 h-17 ">
-                  <div className="h-10 bg-amber-500 w-4 mt-3 rounded-full ml-1.5"></div>
+                <div className="absolute -left-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
+                  <div className="h-10 bg-yellow-500 w-2 mt-3 rounded-full ml-2.5"></div>
                 </div>
 
-                <div className="absolute -right-2 top-0 border-2 border-amber-500 rounded-full w-8 h-17 ">
-                  <div className="h-10 bg-amber-500 w-4 mt-3 rounded-full ml-1.5"></div>
+                <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
+                  <div className="h-10 bg-yellow-500 w-2 mt-3 rounded-full ml-2.5"></div>
                 </div>
               
             </div>  
