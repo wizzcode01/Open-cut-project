@@ -40,20 +40,25 @@ const Hero = () => {
             </motion.h1>
 
             <motion.h1
-              className="relative z-20 text-4xl md:text-6xl font-bold mb-4 border-t border-b border-yellow-500 -rotate-4 p-1 px-8 rounded-lg bg-black/80 "
+              className="relative z-20 text-4xl md:text-6xl font-bold mb-4 border-t border-b border-yellow-500 -rotate-4 p-1 lg:px-8 px-4 rounded-lg bg-black/80 "
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
             <div className="flex justify-between">
-                <div className="absolute -left-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
-                  <div className="h-10 bg-yellow-500 w-2 mt-3 rounded-full ml-2.5"></div>
+                <div className="absolute -left-2 top-0 border border-yellow-500 rounded-full lg:w-8 lg:h-17 w-5 h-12">
+                  <div className="lg:h-10 h-6 bg-yellow-500 w-2 mt-3 rounded-full lg:ml-2.5 ml-1"></div>
                 </div>
 
-                <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
+                <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full lg:w-8 lg:h-17 w-5 h-12">
+                  <div className="lg:h-10 h-6 bg-yellow-500 w-2 mt-3 rounded-full lg:ml-2.5 ml-1"></div>
+                </div>
+
+
+                {/* <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
                   <div className="h-10 bg-yellow-500 w-2 mt-3 rounded-full ml-2.5"></div>
                 </div>
-              
+               */}
             </div>  
 
               Video Editor
