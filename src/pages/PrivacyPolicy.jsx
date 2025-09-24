@@ -18,12 +18,12 @@ const PrivacyPolicy = () => {
                         </span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-100">Privacy Policy</h1>
-                    <p className="text-xl md:text-[22px] text-gray-400 max-w-2xl">
+                    <p className="text-xl md:text-[22px] text-gray-200 max-w-2xl">
                       Learn how we handle your data and privacy. Contact us if you have any questions.</p>
                 </div> 
           </div>
             <div className='flex flex-col justify-center lg:m-14'>
-          <div className='md:w-4xl w-xl flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
+          <div className='md:w-4xl w-full lg:w-xl flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
         
               <div className="mb-12">
                 <div className="rounded-lg flex flex-col gap-5">

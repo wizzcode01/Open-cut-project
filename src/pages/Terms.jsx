@@ -17,12 +17,12 @@ const TermsOfService = () => {
                         </span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-100">Terms of Service</h1>
-                    <p className="text-xl md:text-[22px] text-gray-400 max-w-2xl">
+                    <p className="text-xl md:text-[22px] text-gray-200 max-w-2xl">
                       Fair and transparent terms for our free, open-source video editor.</p>
                 </div> 
           </div>
             <div className='flex flex-col justify-center md:m-14'>
-          <div className='md:w-4xl w-xl flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
+          <div className='md:w-4xl lg:w-xl w-full flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
           
               <div className="mb-12">
                 <h2 className="text-2xl font-bold  mb-6">

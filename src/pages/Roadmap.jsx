@@ -18,7 +18,7 @@ const Roadmap = () => {
                         </span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-100">Roadmap</h1>
-                    <p className="text-xl md:text-xl text-gray-400 max-w-3xl">
+                    <p className="text-xl md:text-xl text-[#d4d4d4] max-w-3xl">
                        What's coming next for OpenCut (last updated: July 14, 2025) </p>
                 </div> 
 
