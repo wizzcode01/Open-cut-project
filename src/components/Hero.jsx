@@ -4,8 +4,18 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { SiVercel } from 'react-icons/si';
 import { motion } from "framer-motion";
-
+import { useRef } from "react"
+import {  useMotionValue, useTransform } from "framer-motion"
+ 
 const Hero = () => {
+
+ const containerRef = useRef(null)
+ //motion values for both handles
+ const leftX = useMotionValue(0)
+ const rightX = useMotionValue(0)
+
+ const maskLeft = useTransform(leftX, [0, 150], ["0%", "100%"])
+  const maskRight = useTransform(rightX, [0, 150], ["0%", "100%"])
   return (
     <div
       className="w-full h-screen bg-cover bg-center text-white"
@@ -39,30 +49,46 @@ const Hero = () => {
               The Open Source
             </motion.h1>
 
-            <motion.h1
-              className="relative z-20 text-4xl md:text-6xl font-bold mb-4 border-t border-b border-yellow-500 -rotate-4 p-1 lg:px-8 px-4 rounded-lg bg-black/80 "
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-            >
-            <div className="flex justify-between">
-                <div className="absolute -left-2 top-0 border border-yellow-500 rounded-full lg:w-8 lg:h-17 w-5 h-12">
-                  <div className="lg:h-10 h-6 bg-yellow-500 w-2 mt-3 rounded-full lg:ml-2.5 ml-1"></div>
-                </div>
+            
+          <motion.div
+            ref={containerRef}
+            className="relative  border border-yellow-500 rounded-2xl bg-black/80 px-8 lg:px-8 lg:h-18 -rotate-3 h-15 flex items-center justify-center"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          >
+      {/* Text with dynamic mask */}
+      <motion.h1
+        className="text-4xl md:text-6xl font-bold text-gray-100 text-center"
+        // style={{
+        //   WebkitMaskImage: `linear-gradient(to bottom, rgba(0,0,0,1) ${maskLeft.get()}, rgba(0,0,0,0) ${maskRight.get()})`,
+        //   WebkitMaskRepeat: "no-repeat",
+        //   WebkitMaskSize: "100% 100%",
+        // }}
+      >
+        Video Editor
+      </motion.h1>
 
-                <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full lg:w-8 lg:h-17 w-5 h-12">
-                  <div className="lg:h-10 h-6 bg-yellow-500 w-2 mt-3 rounded-full lg:ml-2.5 ml-1"></div>
-                </div>
+      {/* Left handle */}
+      <motion.div
+        drag="x"
+        dragConstraints={containerRef}
+        style={{ x: leftX }}
+        className="absolute -left-4 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+      >
+        <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
+      </motion.div>
 
-
-                {/* <div className="absolute -right-2 top-0 border border-yellow-500 rounded-full w-8 h-17 ">
-                  <div className="h-10 bg-yellow-500 w-2 mt-3 rounded-full ml-2.5"></div>
-                </div>
-               */}
-            </div>  
-
-              Video Editor
-            </motion.h1>
+      {/* Right handle */}
+      <motion.div
+        drag="x"
+        dragConstraints={containerRef}
+        style={{ x: rightX }}
+        className="absolute -right-3 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+      >
+        <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
+      </motion.div>
+    </motion.div>
           </div>
 
           <motion.p
