@@ -59,36 +59,36 @@ const Hero = () => {
           >
       {/* Text with dynamic mask */}
       <motion.h1
+         style={{
+          WebkitMaskImage: `linear-gradient(to right, black ${maskLeft.get()}, transparent ${maskRight.get()})`,
+          maskImage: `linear-gradient(to right, black ${maskLeft.get()}, transparent ${maskRight.get()})`,
+          transition: 'mask-image 0.2s, -webkit-mask-image 0.2s'
+        }}
         className="text-4xl md:text-6xl font-bold text-gray-100 text-center"
-        // style={{
-        //   WebkitMaskImage: `linear-gradient(to bottom, rgba(0,0,0,1) ${maskLeft.get()}, rgba(0,0,0,0) ${maskRight.get()})`,
-        //   WebkitMaskRepeat: "no-repeat",
-        //   WebkitMaskSize: "100% 100%",
-        // }}
       >
         Video Editor
       </motion.h1>
 
-      {/* Left handle */}
-      <motion.div
-        drag="x"
-        dragConstraints={containerRef}
-        style={{ x: leftX }}
-        className="absolute -left-4 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
-      >
-        <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
-      </motion.div>
+        {/* Left handle */}
+        <motion.div
+          drag="x"
+          dragConstraints={containerRef}
+          style={{ x: leftX }}
+          className="absolute md:-left-4 left-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+        >
+          <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
+        </motion.div>
 
-      {/* Right handle */}
-      <motion.div
-        drag="x"
-        dragConstraints={containerRef}
-        style={{ x: rightX }}
-        className="absolute -right-3 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
-      >
-        <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
-      </motion.div>
-    </motion.div>
+          {/* Right handle */}
+          <motion.div
+            drag="x"
+            dragConstraints={containerRef}
+            style={{ x: rightX }}
+            className="absolute md:-right-3 right-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+          >
+            <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
+          </motion.div>
+        </motion.div>
           </div>
 
           <motion.p
