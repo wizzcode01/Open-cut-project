@@ -5,7 +5,8 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <div className="bg-[#000000] w-full border-t border-gray-800 py-4">
-       <div className="flex flex-col lg:flex md:flex-row justify-center items-start gap-5 p-10 max-w-6xl ">
+      <div className="max-w-6xl flex-col ">
+       <div className="flex flex-col lg:flex md:flex-row justify-center items-start gap-5 p-10  ">
           <div className="flex flex-col text-left text-white gap-4 md:w-1/2">
               <div className="flex gap-2 items-center">
                    <img src={logo} alt="logo" />
@@ -19,7 +20,7 @@ const Footer = () => {
                    <FaXTwitter className="text-gray-400 hover:text-white cursor-pointer transition-colors"/>
                    <FaDiscord className="text-gray-400 hover:text-[#5865F2] cursor-pointer transition-colors"/>
                 </div>
-                 <p className="text-gray-400 mt-10 text-[14px]">© 2025 OpenCut, All Rights Reserved</p>     
+                
           </div>
           
           <div className="flex  gap-10">
@@ -44,7 +45,8 @@ const Footer = () => {
        
        </div>
     
-       
+        <p className="text-gray-400 mb-5 text-[14px] md:ml-45 ml-10">© 2025 OpenCut, All Rights Reserved</p>   
+      </div>    
     </div>
   )
 }

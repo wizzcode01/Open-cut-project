@@ -22,7 +22,7 @@ const TermsOfService = () => {
                 </div> 
           </div>
             <div className='flex flex-col justify-center md:m-14'>
-          <div className='md:w-4xl lg:w-xl w-full flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
+          <div className='md:w-4xl w-full flex flex-col justify-center  text-gray-100 border rounded-lg border-[#222121] shadow p-7 m-auto '>
           
               <div className="mb-12">
                 <h2 className="text-2xl font-bold  mb-6">
