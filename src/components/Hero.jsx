@@ -14,6 +14,16 @@ const Hero = () => {
  const leftX = useMotionValue(0)
  const rightX = useMotionValue(0)
 
+ const clipPath = useTransform(
+    [leftX, rightX],
+    ([left, right]) => {
+      const containerWidth = 400;
+      const leftPercent = Math.max(0, (left / containerWidth) * 100);
+      const rightPercent = Math.min(100, 100 + (right / containerWidth) * 100);
+      
+      return `polygon(0% 0%, ${leftPercent}% 0%, ${leftPercent}% 100%, 0% 100%, 0% 0%, ${rightPercent}% 0%, ${rightPercent}% 100%, 100% 100%, 100% 0%)`;
+    }
+  );
 
   return (
     <div
@@ -63,18 +73,18 @@ const Hero = () => {
         Video Editor
       </motion.h1>
 
-        <motion.div
-          className="absolute top-0 left-0 w-full h-full bg-black z-20"
-          style={{
-            clipPath: leftX.to((x) => `inset(${x}px 0 0 0)`),
-          }}
-        />
+         <motion.div
+            className="absolute top-0 left-0 w-full h-full bg-black z-20"
+            style={{
+            clipPath: clipPath,
+            }}
+          />
 
         <motion.div
           drag="x"
           dragConstraints={containerRef}
           style={{ x: leftX }}
-          className="absolute md:-left-4 left-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+          className="absolute md:left-0 left-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black z-30"
         >
           <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
         </motion.div>
@@ -83,7 +93,7 @@ const Hero = () => {
             drag="x"
             dragConstraints={containerRef}
             style={{ x: rightX }}
-            className="absolute md:-right-3 right-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black"
+            className="absolute md:right-0 right-0 top-0 border border-yellow-500 rounded-full lg:w-7 lg:h-18 w-7 h-15 cursor-pointer bg-black z-30"
           >
             <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
           </motion.div>
