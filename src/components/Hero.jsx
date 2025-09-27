@@ -101,7 +101,7 @@ const Hero = () => {
           </div>
 
           <motion.p
-            className="text-lg md:text-xl max-w-xl mb-6 text-gray-400"
+            className="text-[20px] md:text-xl max-w-xl mb-10 text-[#929191] mt-5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
