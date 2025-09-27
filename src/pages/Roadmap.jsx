@@ -12,7 +12,7 @@ const Roadmap = () => {
                 {/* Header Section */}
                 <div className="flex flex-col gap-6 text-center max-w-4xl">
                     <div className="flex justify-center">
-                        <span className="rounded-xl px-3 flex gap-2 items-center text-[13px] font-bold text-white bg-[#2e2c2c]">
+                        <span className="rounded-2xl px-3 flex gap-2 items-center text-[13px] font-bold text-white bg-[#2e2c2c]">
                             <FaGithub className="text-gray-200"/>
                             Open Source
                         </span>
@@ -113,7 +113,7 @@ const Roadmap = () => {
                           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a 
                                 href="https://github.com/OpenCut-app/OpenCut/blob/main/.github/CONTRIBUTING.md" 
-                                className="bg-gray-900 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-700 transition-colors flex gap-2 items-center"
+                                className="border-gray-900 border text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-700 transition-colors flex gap-2 items-center"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -122,7 +122,7 @@ const Roadmap = () => {
                             </a>
                             <a 
                                 href="https://github.com/OpenCut-app/OpenCut/issues" 
-                                className="border border-gray-600 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-800 transition-colors text-center"
+                                className="border border-gray-900 text-white px-6 py-2 rounded-2xl font-semibold hover:bg-gray-800 transition-colors text-center"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >

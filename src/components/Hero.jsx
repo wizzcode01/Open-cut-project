@@ -3,7 +3,7 @@ import landingImg from '../assets/landing-page .webp';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { SiVercel } from 'react-icons/si';
-import { motion } from "framer-motion";
+import { motion, MotionValue } from "framer-motion";
 import { useRef } from "react"
 import {  useMotionValue, useTransform } from "framer-motion"
  
@@ -14,8 +14,7 @@ const Hero = () => {
  const leftX = useMotionValue(0)
  const rightX = useMotionValue(0)
 
- const maskLeft = useTransform(leftX, [0, 150], ["0%", "100%"])
-  const maskRight = useTransform(rightX, [0, 150], ["0%", "100%"])
+
   return (
     <div
       className="w-full h-screen bg-cover bg-center text-white"
@@ -57,19 +56,20 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-      {/* Text with dynamic mask */}
+     
       <motion.h1
-         style={{
-          WebkitMaskImage: `linear-gradient(to right, black ${maskLeft.get()}, transparent ${maskRight.get()})`,
-          maskImage: `linear-gradient(to right, black ${maskLeft.get()}, transparent ${maskRight.get()})`,
-          transition: 'mask-image 0.2s, -webkit-mask-image 0.2s'
-        }}
         className="text-4xl md:text-6xl font-bold text-gray-100 text-center"
       >
         Video Editor
       </motion.h1>
 
-        {/* Left handle */}
+        <motion.div
+          className="absolute top-0 left-0 w-full h-full bg-black z-20"
+          style={{
+            clipPath: leftX.to((x) => `inset(${x}px 0 0 0)`),
+          }}
+        />
+
         <motion.div
           drag="x"
           dragConstraints={containerRef}
@@ -79,7 +79,6 @@ const Hero = () => {
           <div className="lg:h-11 h-8 bg-yellow-500 w-3 mt-3 rounded-full ml-[7px]"></div>
         </motion.div>
 
-          {/* Right handle */}
           <motion.div
             drag="x"
             dragConstraints={containerRef}
